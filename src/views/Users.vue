@@ -15,7 +15,7 @@ onMounted(() => {
     <h1>Lista de Usuarios (Ejemplo)</h1>
     <ul>
       <!-- 🔗 Se renderizan los usuarios traídos desde el backend -->
-      <li v-for="u in userStore.users" :key="u.id">{{ u.name }}</li>
+      <li v-for="u in userStore.users" :key="u.id">{{ u.username }}</li>
     </ul>
   </div>
 </template>

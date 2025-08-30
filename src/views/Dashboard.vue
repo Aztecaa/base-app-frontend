@@ -1,0 +1,1 @@
+<template><h3>Este es el dashboard despues de loguear deberias llegar aca</h3></template>

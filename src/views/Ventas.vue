@@ -1,0 +1,1 @@
+<template><h3>Esto deberia ver el cajero</h3></template>

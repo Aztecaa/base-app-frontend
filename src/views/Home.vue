@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div>
-        <h1>Bienvenido a la App Base 🚀</h1>
-        <p>Este es tu punto de partida.</p>
+    <div class="flex flex-col items-center justify-center w-full min-h-screen">
+        <h1 class="text-4xl font-bold mb-4">Bienvenido 🚀</h1>
+        <p class="text-lg">Este es tu punto de partida</p>
     </div>
 </template>

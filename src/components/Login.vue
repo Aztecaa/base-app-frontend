@@ -24,11 +24,16 @@ const handleLogin = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="flex flex-col m-auto items-center max-w-2xl gap-3">
         <h2>Login</h2>
-        <input v-model="username" placeholder="Usuario" />
-        <input v-model="password" type="password" placeholder="Contraseña" />
-        <button @click="handleLogin">Iniciar sesión</button>
+        <input class="p-2" v-model="username" placeholder="Usuario" />
+        <input class="p-2" v-model="password" type="password" placeholder="Contraseña" />
+        <button class="px-4 py-2 rounded-lg cursor-pointer transition-colors duration-200
+         !bg-black !text-white hover:bg-gray-900
+         dark:bg-transparent dark:border dark:border-transparent dark:hover:border-indigo-600 dark:text-white"
+            @click="handleLogin">
+            Iniciar sesión
+        </button>
         <p v-if="error" style="color:red">{{ error }}</p>
     </div>
 </template>

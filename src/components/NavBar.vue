@@ -29,13 +29,14 @@
 
         <!-- User Info / Login -->
         <div class="ml-auto flex gap-4 items-center">
-            <router-link class="hover:text-indigo-600 dark:hover:text-indigo-400"
-                v-if="!user" to="/login">Login</router-link>
+            <router-link class="hover:text-indigo-600 dark:hover:text-indigo-400" v-if="!user"
+                to="/login">Login</router-link>
             <div v-else class="flex gap-2 items-center">
                 <span v-if="role === 'supervisor'">🖥️</span>
                 <span v-if="role === 'cajero'">📦</span>
                 <span>{{ user.username }} ({{ role }})</span>
-                <button class="bg-red-700 hover:bg-red-600 text-white cursor-pointer px-2 py-1 rounded-lg" @click="userStore.logout()">
+                <button class="bg-red-700 hover:bg-red-600 text-white cursor-pointer px-2 py-1 rounded-lg"
+                    @click="userStore.logout()">
                     Salir
                 </button>
             </div>

@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col items-center justify-center w-full h-[100vh]">
     <h1>Lista de Usuarios (Ejemplo)</h1>
     <ul>
       <!-- 🔗 Se renderizan los usuarios traídos desde el backend -->

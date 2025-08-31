@@ -13,12 +13,11 @@ const toggleTheme = () => {
 </script>
 
 <template>
-    <div
-        :class="['min-h-screen flex flex-col transition-colors', isDark ? 'bg-gray-900 text-white' : 'bg-white text-black']">
+    <div :class="['flex flex-col transition-colors', isDark ? 'bg-gray-900 text-white' : 'bg-white text-black']">
 
         <Navbar />
 
-        <main class="flex-1 flex items-center justify-center w-full p-4">
+        <main class="flex-1 flex items-center justify-center w-full">
             <slot />
         </main>
 

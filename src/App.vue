@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Navbar from './components/Navbar.vue'
+import NavBar from './components/NavBar.vue'
 import ButtonToggleTheme from './components/ButtonToggleTheme.vue'
 
 const darkMode = ref(false)
@@ -13,7 +13,7 @@ const toggleDark = () => {
 
 <template>
   <div class="min-h-screen bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
-    <Navbar />
+    <NavBar />
     <main class="p-4 pt-20">
       <router-view />
     </main>

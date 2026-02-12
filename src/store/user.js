@@ -58,7 +58,7 @@ export const useUserStore = defineStore('user', {
             } finally {
                 this.user = null
                 localStorage.removeItem('user') // 🔑 Borra sesión guardada
-                router.push('/') // 👈 redirige a la raíz
+                router.push('/logind:\Proyectos\Jonas Caja\frontend-caja\src\components\Stock.vue') // 👈 redirige a la raíz
             }
         }
     },

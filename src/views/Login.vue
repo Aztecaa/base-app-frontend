@@ -17,7 +17,7 @@ const handleLogin = async () => {
     try {
         /* await new Promise(resolve => setTimeout(resolve, 2000)) */
         const ok = await userStore.login(username.value, password.value)
-        if (ok) router.push('/dashboard')
+        if (ok) router.push('/')
         else error.value = 'Usuario o contraseña incorrectos'
     } catch (err) {
         error.value = 'Error inesperado'

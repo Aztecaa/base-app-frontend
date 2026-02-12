@@ -1,6 +1,3 @@
-// 🔗 Este archivo centraliza la conexión del frontend con el backend
-// Si en algún momento cambiás el backend, solo modificás acá.
-
 //api.js
 import axios from 'axios'
 
